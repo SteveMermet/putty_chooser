@@ -115,29 +115,63 @@ namespace CVLog_serial_tool
 
         private void LaunchRealTermForPort(string port)
         {
-            var realtermPath = ConfigurationManager.AppSettings["RealTermPath"] ?? "C:\\Program Files (x86)\\BEL\\Realterm\\realterm.exe";
-                // Strip 'COM' prefix if present
-                string portNum = port.StartsWith("COM", StringComparison.OrdinalIgnoreCase) ? port.Substring(3) : port;
-                var args = $"PORT={portNum} BAUD=115200 " +
-                           "DISPLAY=1 " +
-                           "SENDSTR=\"controlModem -p\" " +
-                           "SENDSTR=\"controlModem -s\" " +
-                           "SENDSTR=\"updateModem -s\" " +
-                           "SENDSTR=\"updateModem\" " +
-                           "SENDSTR=\"test\" " +
-                           "CR=1 LF=1";
+            // Try to find RealTerm automatically, fallback to config if specified
+            string realtermPath = ExecutableFinder.FindRealTerm();
+            
+            // If not found automatically, check config file
+            if (string.IsNullOrEmpty(realtermPath))
+            {
+                realtermPath = ConfigurationManager.AppSettings["RealTermPath"];
+            }
+            
+            // If still not found, show error
+            if (string.IsNullOrEmpty(realtermPath) || !System.IO.File.Exists(realtermPath))
+            {
+                MessageBox.Show("RealTerm not found! Please install RealTerm or specify the path in the config file.", 
+                              "RealTerm Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Strip 'COM' prefix if present
+            string portNum = port.StartsWith("COM", StringComparison.OrdinalIgnoreCase) ? port.Substring(3) : port;
+            var args = $"PORT={portNum} BAUD=115200 " +
+                       "DISPLAY=1 " +
+                       "SENDSTR=\"controlModem -p\" " +
+                       "SENDSTR=\"controlModem -s\" " +
+                       "SENDSTR=\"updateModem -s\" " +
+                       "SENDSTR=\"updateModem\" " +
+                       "SENDSTR=\"test\" " +
+                       "CR=1 LF=1";
             try
             {
                 Process.Start(realtermPath, args);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Failed to launch RealTerm: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Failed to launch RealTerm: {ex.Message}\n\nRealTerm path: {realtermPath}", 
+                              "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void LaunchPutty(string port)
-        {   var puttyPath = ConfigurationManager.AppSettings["PuttyPath"] ?? "C:\\Users\\mermet\\Desktop\\putty.exe";
+        {
+            // Try to find PuTTY automatically, fallback to config if specified
+            string puttyPath = ExecutableFinder.FindPutty();
+            
+            // If not found automatically, check config file
+            if (string.IsNullOrEmpty(puttyPath))
+            {
+                puttyPath = ConfigurationManager.AppSettings["PuttyPath"];
+            }
+            
+            // If still not found, show error
+            if (string.IsNullOrEmpty(puttyPath) || !System.IO.File.Exists(puttyPath))
+            {
+                MessageBox.Show("PuTTY not found! Please install PuTTY or specify the path in the config file.", 
+                              "PuTTY Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             var args = $"-serial {port} -sercfg 115200,8,n,1,N";
             try
             {
@@ -145,7 +179,8 @@ namespace CVLog_serial_tool
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Failed to launch PuTTY: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Failed to launch PuTTY: {ex.Message}\n\nPuTTY path: {puttyPath}", 
+                              "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

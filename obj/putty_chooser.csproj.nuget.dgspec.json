@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mermet\\Documents\\DotNet\\putty_chooser\\putty_chooser.csproj": {}
+    "C:\\Git\\putty_chooser\\putty_chooser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mermet\\Documents\\DotNet\\putty_chooser\\putty_chooser.csproj": {
+    "C:\\Git\\putty_chooser\\putty_chooser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mermet\\Documents\\DotNet\\putty_chooser\\putty_chooser.csproj",
+        "projectUniqueName": "C:\\Git\\putty_chooser\\putty_chooser.csproj",
         "projectName": "CVLog_serial_tool",
-        "projectPath": "C:\\Users\\mermet\\Documents\\DotNet\\putty_chooser\\putty_chooser.csproj",
-        "packagesPath": "C:\\Users\\mermet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mermet\\Documents\\DotNet\\putty_chooser\\obj\\",
+        "projectPath": "C:\\Git\\putty_chooser\\putty_chooser.csproj",
+        "packagesPath": "C:\\Users\\armand\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\putty_chooser\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mermet\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\armand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net48"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,12 +51,6 @@
         "net48": {
           "targetAlias": "net48",
           "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[9.0.8, )"

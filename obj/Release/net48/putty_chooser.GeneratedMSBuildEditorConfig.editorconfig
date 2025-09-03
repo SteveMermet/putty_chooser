@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = CVLog_serial_tool
-build_property.ProjectDir = C:\Users\mermet\Documents\DotNet\putty_chooser\
+build_property.ProjectDir = C:\Git\putty_chooser\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
