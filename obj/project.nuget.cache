@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "/dFf97kZTEA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mermet\\Documents\\DotNet\\putty_chooser\\putty_chooser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mermet\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\mermet\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512",
+    "C:\\Users\\mermet\\.nuget\\packages\\system.codedom\\9.0.8\\system.codedom.9.0.8.nupkg.sha512",
+    "C:\\Users\\mermet\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.8\\system.configuration.configurationmanager.9.0.8.nupkg.sha512",
+    "C:\\Users\\mermet\\.nuget\\packages\\system.io.ports\\9.0.8\\system.io.ports.9.0.8.nupkg.sha512",
+    "C:\\Users\\mermet\\.nuget\\packages\\system.management\\9.0.8\\system.management.9.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

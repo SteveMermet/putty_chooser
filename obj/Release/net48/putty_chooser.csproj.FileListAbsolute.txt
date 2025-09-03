@@ -1,0 +1,14 @@
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\CVLog_serial_tool.exe.config
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\CVLog_serial_tool.exe
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\CVLog_serial_tool.pdb
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\System.CodeDom.dll
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\System.Configuration.ConfigurationManager.dll
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\System.IO.Ports.dll
+C:\Users\mermet\Documents\DotNet\putty_chooser\obj\Release\net48\putty_chooser.csproj.AssemblyReference.cache
+C:\Users\mermet\Documents\DotNet\putty_chooser\obj\Release\net48\putty_chooser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mermet\Documents\DotNet\putty_chooser\obj\Release\net48\putty_chooser.AssemblyInfoInputs.cache
+C:\Users\mermet\Documents\DotNet\putty_chooser\obj\Release\net48\putty_chooser.AssemblyInfo.cs
+C:\Users\mermet\Documents\DotNet\putty_chooser\obj\Release\net48\putty_chooser.csproj.CoreCompileInputs.cache
+C:\Users\mermet\Documents\DotNet\putty_chooser\obj\Release\net48\putty_ch.9EB362FD.Up2Date
+C:\Users\mermet\Documents\DotNet\putty_chooser\obj\Release\net48\CVLog_serial_tool.exe
+C:\Users\mermet\Documents\DotNet\putty_chooser\obj\Release\net48\CVLog_serial_tool.pdb

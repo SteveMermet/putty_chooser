@@ -1,0 +1,4 @@
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\win-x86\publish\putty_chooser.exe
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\win-x86\publish\putty_chooser.exe.config
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\win-x86\publish\putty_chooser.pdb
+C:\Users\mermet\Documents\DotNet\putty_chooser\bin\Release\net48\win-x86\publish\System.IO.Ports.dll
